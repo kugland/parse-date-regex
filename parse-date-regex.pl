@@ -3,7 +3,8 @@
 # Written by André Kugland <kugland@gmail.com>
 
 # This regex validates and parses dates in the format YYYY-MM-DD, taking into account
-# the number of days in each month and leap years. Leading zeros are discarded.
+# the number of days in each month and leap years. Leading zeros are discarded in the
+# captures.
 
 $regex = qr/^
   0{0,3}(?<year>
