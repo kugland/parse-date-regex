@@ -1,7 +1,7 @@
 # parse-date-regex
 
 This regex validates and parses dates in the format YYYY-MM-DD, taking into account
-the number of the day in each month and leap years. Leading zeros are discarded.
+the number of days in each month and leap years. Leading zeros are discarded.
 
 By removing the spaces and comments in the regex, it can be used in Javascript or any
 other language that supports PCRE (Perl-compatible regular expressions), *e.g.*:
