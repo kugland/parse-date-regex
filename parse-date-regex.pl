@@ -19,8 +19,8 @@ $regex = qr/^
   -0?(?<day>
     (?<=0)[1-9]|                                  # Day 1-9 (any month)
     (?<=-)(?:1\d|2[0-8])|                         # Day 10-28 (any month)
-    (?<!02-)(?:29|30)|                            # 29-30 (all months except February)
-    (?<=0[13578]-|1[02]-)31|                      # 31 (months 1, 3, 5, 7, 8, 10, 12)
+    (?<!02-)(?:29|30)|                            # Day 29-30 (all months except February)
+    (?<=0[13578]-|1[02]-)31|                      # Day 31 (months 1, 3, 5, 7, 8, 10, 12)
     (?<=
       (?:[02468][048]|[13579][26])00-02-|         # Only for years divisible by 400,
       \d\d(?:0[48]|[2468][048]|[13579][26])-02-   # or years divisible by 4 but not by 100,
